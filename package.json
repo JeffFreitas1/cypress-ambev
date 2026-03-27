@@ -1,0 +1,16 @@
+{
+  "name": "serverest-cypress-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testes E2E e API para ServeRest (Cypress + JavaScript)",
+  "scripts": {
+    "postinstall": "cypress install",
+    "open": "cypress open",
+    "run:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "run:frontend": "cypress run --spec 'cypress/e2e/frontend/**/*.cy.js'",
+    "run:all": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^14.0.0"
+  }
+}
